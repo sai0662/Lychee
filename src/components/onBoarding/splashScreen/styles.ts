@@ -15,6 +15,20 @@ export default StyleSheet.create({
     backgroundColor: '#00A3FF',
     borderRadius: hp(1.4),
   },
+  linearGradient: {
+    flex: 1,
+    paddingLeft: 15,
+    paddingRight: 15,
+    borderRadius: 5,
+  },
+  buttonText: {
+    fontSize: 18,
+    fontFamily: 'Gill Sans',
+    textAlign: 'center',
+    margin: 10,
+    color: '#ffffff',
+    backgroundColor: 'transparent',
+  },
   textOne: {
     fontSize: hp(3.8),
     alignSelf: 'center',
@@ -40,12 +54,14 @@ export default StyleSheet.create({
     color: '#0C1A34',
     fontFamily: 'Gilroy-SemiBold',
     fontWeight: '600',
+    opacity: 0.56,
   },
   footerTextSeconds: {
     fontSize: hp(1.2),
     fontFamily: 'Gilroy-SemiBold',
     color: '#0C1A34',
     fontWeight: '600',
+    opacity: 0.56,
   },
   footerTextThird: {
     fontSize: hp(1.2),
@@ -53,5 +69,19 @@ export default StyleSheet.create({
     fontFamily: 'Gilroy-SemiBold',
     color: '#0C1A34',
     fontWeight: '600',
+    opacity: 0.56,
+  },
+  splashView: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  image: {
+    width: wp(46),
+    height: hp(13),
+    alignSelf: 'center',
+    marginTop: hp(40),
+    borderRadius: hp(2),
   },
 });

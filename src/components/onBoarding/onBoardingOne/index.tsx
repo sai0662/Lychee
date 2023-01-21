@@ -32,8 +32,8 @@ const OnBoardingScreenOne = () => {
       <View style={styles.ImageView}>
         <OnBoardOneImage width={'100%'} height={'66%'} />
         <Text style={styles.footerText}>
-          Any funds sent to the address below will be recieved in your{'\n'}{' '}
-          Lychee wallet. Use your usual banking app to make the {'\n'} deposit
+          Any funds sent to the address below will be recieved in your{'\n'}
+          Lychee wallet. Use your usual banking app to make the{'\n'}deposit
           with PayID.
         </Text>
       </View>

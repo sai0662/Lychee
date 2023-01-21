@@ -8,17 +8,19 @@
  * @format
  */
 
-import React from 'react';
-import {View} from 'react-native';
+import React, {useState, useEffect} from 'react';
 import OnBoardingScreenOne from './src/components/onBoarding/onBoardingOne';
-import Splash from './src/components/onBoarding/splashScreen';
-
+import {WithSplashScreen} from './src/components/onBoarding/splashScreen';
 const App = () => {
+  const [isAppReady, setIsAppReady] = useState(false);
+
+  useEffect(() => {
+    setIsAppReady(true);
+  }, []);
   return (
-    <View>
-      <Splash />
-      {/* <OnBoardingScreenOne /> */}
-    </View>
+    <WithSplashScreen isAppReady={isAppReady}>
+      <OnBoardingScreenOne />
+    </WithSplashScreen>
   );
 };
 
